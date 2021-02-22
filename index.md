@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+body{
+    background-image: url('https://drive.google.com/uc?export=view&id=1gGALbyGC5YNRWpUQFACRu76s5s3DLges');
+    
+    /*https://drive.google.com/file/d/11z4zRwmWLBFovB4I_dXT06ashggAtXyi/view?usp=sharing*/
+    /*https://drive.google.com/file/d/1gGALbyGC5YNRWpUQFACRu76s5s3DLges/view?usp=sharing*/
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+<head>
+	<title>test</title>
+</head>
+<body>
+
+</body>
+</html>
