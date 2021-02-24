@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.bg {
+.container {
+
+}
+
+.container img {
   width: 100%;
   height: auto;
   top: 0px;
@@ -13,28 +17,30 @@
   position: absolute;
 }
 
-
-.butimage1{
-  position: relative;
-  left: 50%;
-  top: 50%;
+.container .btn{
+  max-width: 10%;
+  height: auto;
+position: relative;
+right: 100px;
+bottom: 0px;
   background: transparent;
 }
 
-
-.butimage1:active {
+.container .btn:active {
   background-color: transparent;
   box-shadow: transparent;
   transform: translateY(4px);
 }
-
 </style>
 </head>
 <body>
-<img class="bg" src="https://drive.google.com/uc?export=view&id=1mqSj1_Lv4vPS-4FN1OWvYZDa49v6BBpN">
-<img class="butimage1" src="https://drive.google.com/uc?export=view&id=11doW9q3HNDePqcjr6JrOcrjttIxHlpyJ">
+
+
+<div class="container">
+  <img src="https://drive.google.com/uc?export=view&id=1mqSj1_Lv4vPS-4FN1OWvYZDa49v6BBpN" alt="Snow" style="width:100%">
+  <img class="btn" src="https://drive.google.com/uc?export=view&id=11doW9q3HNDePqcjr6JrOcrjttIxHlpyJ">
+  </img>
+</div>
 
 </body>
 </html>
-
-
