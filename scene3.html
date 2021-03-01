@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.container {
+   /*position: relative;*/
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /*width: 100%;*/
+  /*max-width: 100%;*/
+
+}
+
+.container .background {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.container .btn1{
+      width: 200px;
+    height: 250px;
+  position: absolute;
+  right: 300px;
+  bottom: 300px;
+/*  max-width: auto;
+  height: auto;*/
+  background: transparent;
+}
+
+.container .btn1:active {
+  background-color: transparent;
+  box-shadow: transparent;
+  transform: translateY(4px);
+}
+
+.container .btn2{
+      width: 200px;
+    height: 250px;
+  position: absolute;
+  right: 500px;
+  bottom: 300px;
+/*  max-width: auto;
+  height: auto;*/
+  background: transparent;
+}
+
+.container .btn2:active {
+  background-color: transparent;
+  box-shadow: transparent;
+  transform: translateY(4px);
+}
+
+.container .btn3{
+      width: 200px;
+    height: 250px;
+  position: absolute;
+  right: 700px;
+  bottom: 300px;
+/*  max-width: auto;
+  height: auto;*/
+  background: transparent;
+}
+
+.container .btn3:active {
+  background-color: transparent;
+  box-shadow: transparent;
+  transform: translateY(4px);
+}
+
+.animated { 
+
+/*             -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; */
+    -webkit-animation-duration: .5s;
+   animation-duration: .5s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+ }
+ 
+ @-webkit-keyframes bounce { 
+   0%, 100% {
+     -webkit-transform: translateY(0);
+   }
+   50% {
+     -webkit-transform: translateY(-5px);
+   }
+ } 
+ 
+ @keyframes bounce { 
+   0%, 100% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-5px);
+   }
+ }
+ 
+ .bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
+
+/* For width 400px and larger: */
+@media only screen and (max-width: 400px) {
+  .container .btn1{
+	  right: 30px;
+	  bottom: 80px;
+    width: 60px;
+    height: 75px;
+	}
+  .container .btn2{
+    right: 90px;
+    bottom: 80px;
+    width: 60px;
+    height: 75px;
+  }
+  .container .btn3{
+    right: 150px;
+    bottom: 80px;
+    width: 60px;
+    height: 75px;
+  }
+
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img id="bg" class="background" src="https://drive.google.com/uc?export=view&id=1anUL54ackP1osm_rrCUyqHmqA5NWhh3r" alt="Snow">
+  <img id="btn" class="btn1 animated bounce" src="https://drive.google.com/uc?export=view&id=1q0ay-h8xydqGubmoP8jopesGxhU5IguK">
+  <img id="btn2" class="btn2 animated bounce" src="https://drive.google.com/uc?export=view&id=1fn9o7Xz_3-oPkUDYLzSClHxCH053WAxe">
+  <img id="btn3" class="btn3 animated bounce" src="https://drive.google.com/uc?export=view&id=1ZGnJrJy9j_oD6uzNDyjflLb0VTdp2_Yt">
+  
+  <!-- <img id="bg2" class="background1" src="https://drive.google.com/uc?export=view&id=1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO" alt="Snow"> -->
+  <!-- https://drive.google.com/file/d/1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO/view?usp=sharing -->
+
+</div>
+
+<script>
+// function myFunction() {
+//   var x = document.getElementById("bg");
+//   var x2 = document.getElementById("bg2");
+//   var y = document.getElementById("btn");
+//   var y2 = document.getElementById("btn2");
+//   x.style.display = "none";
+//   x2.style.display = "block";
+//   y2.style.display = "block";
+//   y.style.display = "none";
+// }
+
+</script>
+
+</body>
+</html>
