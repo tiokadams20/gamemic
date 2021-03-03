@@ -16,10 +16,7 @@
 
 .container .background {
   width: 100%;
-  height: auto;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  height: 100%;
 }
 
 .container .contain{
@@ -125,15 +122,19 @@
 
 /* For width 400px and larger: */
 @media only screen and (max-width: 400px) {
-  .container .contain{
-    top: 10px;
-    right: 30px;
-    bottom: 5px;
+
+  .container .contain .card .tile__img{
+    position: relative;
+    left: 220px;
+    bottom: 110px;
+    max-width:80px;
+    height:100px;
+
+    /*text-align: center;*/
+
   }
-  .tile__img {
-  width: auto;
-  height: auto;
-  }
+
+
 }
 
 </style>
