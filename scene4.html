@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.container {
+   /*position: relative;*/
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /*width: 100%;*/
+  /*max-width: 100%;*/
+
+}
+
+.container .background {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.container .contain{
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  bottom: 300px;
+  max-width: auto;
+  /*height: auto;*/
+  background: transparent;
+
+
+  height: 300px;
+
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.container .contain:active {
+  background-color: transparent;
+  box-shadow: transparent;
+  transform: translateY(4px);
+}
+
+/*HOOVER STYLE*/
+
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  border-radius: 10px;
+  /*box-shadow: -1rem 0 1rem #000;*/
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+}
+
+.card:hover .filledbar {
+  width: 0px;
+  transition: 0.4s ease-out;
+}
+
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+/* For width 400px and larger: */
+@media only screen and (max-width: 400px) {
+  .container .contain{
+    top: 10px;
+    right: 30px;
+    bottom: 5px;
+  }
+  .tile__img {
+  width: auto;
+  height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <img id="bg" class="background" src="https://drive.google.com/uc?export=view&id=1qjRhPWErXcg5Nepa9tR46eM9Z7HIsVHt" alt="Snow">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+<div class="contain">
+  <div class="card">
+      <img class="tile__img" onclick="location.href='scene5.html';" src="https://drive.google.com/uc?export=view&id=15YhdrIXNIp02ffBiYVMCoUiLKCwLwbbW" alt="Snow" width="300px" height="380px">
+  </div>
+  <div class="card">
+      <img class="tile__img" onclick="location.href='scene5.html';" src="https://drive.google.com/uc?export=view&id=1RkfBroRLJLbFBN9hIwxIm2wihWrydZC5" alt="Snow" width="300px" height="380px">
+  </div>
+  <div class="card">
+      <img class="tile__img" onclick="location.href='scene5.html';" src="https://drive.google.com/uc?export=view&id=1BcIXActMoBSK9cRRyLsUr-WX3VoWdM5F" alt="Snow" width="300px" height="380px">
+  </div>
+  <div class="card">
+      <img class="tile__img" onclick="location.href='scene5.html';" src="https://drive.google.com/uc?export=view&id=1NBXHuSjZclJ07EZ4zEryZsRk7HNIuyYt" alt="Snow" width="300px" height="380px">
+  </div>
+  <div class="card">
+      <img class="tile__img" onclick="location.href='scene5.html';" src="https://drive.google.com/uc?export=view&id=1kt5oBssRE10hVXL6aTfn5X-6sv5lESm-" alt="Snow" width="300px" height="380px">
+  </div>
+</div>
+
+
+  
+
+  <!-- <img id="bg2" class="background1" src="https://drive.google.com/uc?export=view&id=1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO" alt="Snow"> -->
+  <!-- https://drive.google.com/file/d/1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO/view?usp=sharing -->
+
+</div>
+
+<script>
+
+
+</script>
+
+</body>
+</html>
