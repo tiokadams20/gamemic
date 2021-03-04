@@ -1,70 +1,114 @@
-<style type="text/css">
-	.circle-container {
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.container {
+   /*position: relative;*/
   position: relative;
-  width: 20em;
-  height: 20em;
-  border-radius: 50%;
-  padding: 0;
-  list-style: none;
-  margin: 5em auto 0;
-  border: solid 5px tomato;
+  top: 0px;
+  left: 0px;
+  /*width: 100%;*/
+  /*max-width: 100%;*/
+
 }
-.circle-container > * {
-  display: block;
+
+.container .background {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.container .btn{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -3em;
-  width: 6em;
-  height: 6em;
+  right: 950px;
+  top: 180px;
+  max-width: 20%;
+  height: auto;
+  background: transparent;
 }
-.circle-container > *:nth-of-type(1) {
-  transform: rotate(0deg) translate(10em) rotate(0deg);
+
+.container .btn:active {
+  background-color: transparent;
+  box-shadow: transparent;
+  transform: translateY(4px);
 }
-.circle-container > *:nth-of-type(2) {
-  transform: rotate(45deg) translate(10em) rotate(-45deg);
-}
-.circle-container > *:nth-of-type(3) {
-  transform: rotate(90deg) translate(10em) rotate(-90deg);
-}
-.circle-container > *:nth-of-type(4) {
-  transform: rotate(135deg) translate(10em) rotate(-135deg);
-}
-.circle-container > *:nth-of-type(5) {
-  transform: rotate(180deg) translate(10em) rotate(-180deg);
-}
-.circle-container > *:nth-of-type(6) {
-  transform: rotate(225deg) translate(10em) rotate(-225deg);
-}
-.circle-container > *:nth-of-type(7) {
-  transform: rotate(270deg) translate(10em) rotate(-270deg);
-}
-.circle-container > *:nth-of-type(8) {
-  transform: rotate(315deg) translate(10em) rotate(-315deg);
-}
-.circle-container img {
-  display: block;
-  max-width: 100%;
-  border-radius: 50%;
-  filter: grayscale(100%);
-  border: solid 5px tomato;
-  transition: .15s;
-}
-.circle-container img:hover {
-  filter: grayscale(0);
+
+/*bounching button*/
+.animated { 
+    /*background-image: url("https://drive.google.com/uc?export=view&id=11doW9q3HNDePqcjr6JrOcrjttIxHlpyJ"); 
+    background-repeat: no-repeat;
+   background-position: left top; 
+ padding-top:95px;
+    margin-bottom:60px;*/
+/*             -webkit-animation-duration: 1s;
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; */
+    -webkit-animation-duration: .5s;
+   animation-duration: .5s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   -webkit-animation-iteration-count: infinite;
+ }
+ 
+ @-webkit-keyframes bounce { 
+   0%, 100% {
+     -webkit-transform: translateY(0);
+   }
+   50% {
+     -webkit-transform: translateY(-5px);
+   }
+ } 
+ 
+ @keyframes bounce { 
+   0%, 100% {
+     transform: translateY(0);
+   }
+   50% {
+     transform: translateY(-5px);
+   }
+ }
+ 
+ .bounce { 
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+ }
+
+/* For width 400px and larger: */
+@media only screen and (max-width: 400px) {
+  .container .btn{
+    right: 240px;
+    top: 50px;    
+    max-width:20%;
+    height:auto;
+  }
 }
 </style>
+</head>
+<body>
 
 
+<div class="container">
+  <!-- alt solution circle order multiple iimages: https://css-tricks.com/snippets/sass/placing-items-circle/ -->
+  <img id="bg" class="background" src="https://drive.google.com/uc?export=view&id=1kkVd-pR8qnI7r-SxX4tPBY_cJco5s-BL" alt="Snow">
+  <img id="btn" onclick="location.href='scene7.html';" class="btn animated bounce" src="https://drive.google.com/uc?export=view&id=1q0ay-h8xydqGubmoP8jopesGxhU5IguK">
 
-<ul class='circle-container'>
-  <li><img src='http://lorempixel.com/100/100/city'></li>
-  <li><img src='http://lorempixel.com/100/100/nature'></li>
-  <li><img src='http://lorempixel.com/100/100/abstract'></li>
-  <li><img src='http://lorempixel.com/100/100/cats'></li>
-  <li><img src='http://lorempixel.com/100/100/food'></li>
-  <li><img src='http://lorempixel.com/100/100/animals'></li>
-  <li><img src='http://lorempixel.com/100/100/business'></li>
-  <li><img src='http://lorempixel.com/100/100/people'></li>
-</ul>
+ 
+
   
+
+  <!-- <img id="bg2" class="background1" src="https://drive.google.com/uc?export=view&id=1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO" alt="Snow"> -->
+  <!-- https://drive.google.com/file/d/1aI1CavuL1Uv8EMBcYNHaIDg8KU0b9FlO/view?usp=sharing -->
+
+</div>
+
+
+</body>
+</html>
